@@ -2,26 +2,169 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.normal {
+  background-color: #a8a77a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.fire {
+  background-color: #ee8130;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.water {
+  background-color: #6390f0;
+}
+
+.grass {
+  background-color: #7ac74c;
+}
+
+.electric {
+  background-color: #f7d02c;
+}
+
+.ice {
+  background-color: #96d9d6;
+}
+
+.fighting {
+  background-color: #c22e28;
+}
+
+.poison {
+  background-color: #a33ea1;
+}
+
+.ground {
+  background-color: #e2bf65;
+}
+
+.flying {
+  background-color: #a98ff3;
+}
+
+.psychic {
+  background-color: #f95587;
+}
+
+.bug {
+  background-color: #a6b91a;
+}
+
+.rock {
+  background-color: #b6a136;
+}
+
+.ghost {
+  background-color: #735797;
+}
+
+.dragon {
+  background-color: #6f35fc;
+}
+
+.dark {
+  background-color: #705746;
+}
+
+.steel {
+  background-color: #b7b7ce;
+}
+
+.fairy {
+  background-color: #d685ad;
+}
+
+.h-10p {
+    height: 10%;
+}
+
+.h-90p {
+    height: 90%;
+}
+
+.w-12p {
+  width: 12%;
+}
+.w-18p {
+  width: 18%;
+}
+
+.text-11p {
+  font-size: 11px;
+}
+
+.basis-20p {
+  flex-basis: 20%;
+}
+
+.normalx {
+  background-color: #e4e4d7;
+}
+
+.firex {
+  background-color: #ff836a;
+}
+
+.waterx {
+  background-color: #acc5ff;
+}
+
+.grassx {
+  background-color: #83e6d5;
+}
+
+.electricx {
+  background-color: #fff6a4;
+}
+
+.icex {
+  background-color: #94c5ff;
+}
+
+.fightingx {
+  background-color: #f0453f;
+}
+
+.poisonx {
+  background-color: #e3c5e2;
+}
+
+.groundx {
+  background-color: #e2bf65;
+}
+
+.flyingx {
+  background-color: #e5ddfb;
+}
+
+.psychicx {
+  background-color: #ff94cd;
+}
+
+.bugx {
+  background-color:#b4e652;
+}
+
+.rockx {
+  background-color: #cda473;
+}
+
+.ghostx {
+  background-color: #d5ccdf;
+}
+
+.dragonx {
+  background-color: #d3c2fe;
+}
+
+.darkx {
+  background-color: #94949c;
+}
+
+.steelx {
+  background-color: #b7b7ce;
+}
+
+.fairyx {
+  background-color: #ffacac;
 }
