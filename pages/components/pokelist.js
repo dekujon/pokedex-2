@@ -6,7 +6,7 @@ export default function Pokelist({ pokemonData, pokeOnClick }) {
   return (
     <div className="h-90p flex flex-col md:flex-row p-0.5 md:p-2 overflow-auto">
       <ul className="flex flex-col md:flex-row md:flex-wrap md:gap-1 md:p-0.5 lg:gap-2  justify-around flex-grow">
-        {pokemonData.map((poke) => (
+        {pokemonData && pokemonData.map((poke) => (
           <li
             className={`lg:p-2 basis-20p lg:basis-1/6 ${poke.types['0'].type.name + 'x'} border border-black md:border-none rounded-lg md:rounded-2xl flex flex-row md:flex-col  items-center justify-center box-border cursor-pointer lg:card lg:shadow-xl md:hover:scale-105`}
             key={poke.name}

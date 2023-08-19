@@ -32,7 +32,7 @@ export default function Home() {
         setNextPageUrl(res.data.next);
 
         const pokeData = await Promise.all(
-          pokeList.map(async (p) => {
+          pokeList && pokeList.map(async (p) => {
             const pokeResponse = await axios.get(p.url);
             return pokeResponse.data;
           })
