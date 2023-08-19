@@ -37,7 +37,7 @@ function Dex({ selectedPokemon, isClicked }) {
           <div>
             {selectedPokemon.types?.map((t) => {
               return (
-                <span
+                <span key={t.type.name}
                   className={`mx-1 bg-transparent font-bold p-1 uppercase text-xs text-white ${t.type.name}`}
                 >
                   {t.type.name}
@@ -49,24 +49,26 @@ function Dex({ selectedPokemon, isClicked }) {
           <div className="mt-2">
             {selectedPokemon.stats?.map((poke) => {
               return (
-                <table className="border-2 border-transparent w-full sm:w-11/12 md:w-10/12 lg-w-11/12 mx-auto">
-                  <tr>
-                    <td className="w-5/12 sm:w-4/12 lg:w-5/12">
-                      <p className="capitalize text-11p sm:text-xs font-semibold text-start">
-                        {poke.stat.name}
-                      </p>
-                    </td>
-                    <td>
-                      <div className="capitalize font-semibold  bg-neutral-200 dark:bg-neutral-600 flex">
-                        <div
-                          className="bg-green-300 p-0.5  text-center text-xs font-medium leading-none text-primary-100"
-                          style={{ width: (poke.base_stat / 180) * 100 + "%" }}
-                        >
-                          {poke.base_stat}
+                <table key={poke.stat.name} className="border-2 border-transparent w-full sm:w-11/12 md:w-10/12 lg-w-11/12 mx-auto">
+                  <tbody>
+                    <tr>
+                      <td className="w-5/12 sm:w-4/12 lg:w-5/12">
+                        <p className="capitalize text-11p sm:text-xs font-semibold text-start">
+                          {poke.stat.name}
+                        </p>
+                      </td>
+                      <td>
+                        <div className="capitalize font-semibold  bg-neutral-200 dark:bg-neutral-600 flex">
+                          <div
+                            className="bg-green-300 p-0.5  text-center text-xs font-medium leading-none text-primary-100"
+                            style={{ width: (poke.base_stat / 180) * 100 + "%" }}
+                          >
+                            {poke.base_stat}
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               );
             })}
