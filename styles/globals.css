@@ -168,3 +168,7 @@
 .fairyx {
   background-color: #ffacac;
 }
+
+.mobile-fit {
+  height: 100svh;
+}

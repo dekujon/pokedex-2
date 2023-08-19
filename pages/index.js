@@ -65,7 +65,7 @@ export default function Home() {
   if (loading)
     return (
       <main>
-        <div className="flex h-screen">
+        <div className="flex mobile-fit">
           <div className="basis-3/12 md:basis-5/12 lg:basis-8/12 bg-cyan-100">
             <div className="h-90p flex justify-center items-center">
               <img
@@ -87,7 +87,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="flex h-screen">
+      <div className="flex mobile-fit">
         <div className="basis-3/12 md:basis-5/12 lg:basis-8/12 bg-cyan-100">
           <Pokelist pokemonData={pokemon} pokeOnClick={handlePokemonClick} />
           <Pagination
