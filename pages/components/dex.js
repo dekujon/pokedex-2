@@ -3,7 +3,7 @@ function Dex({ selectedPokemon, isClicked }) {
   const fallBack = 'https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png'
 
   return (
-    <div className="basis-9/12 md:basis-7/12 lg:basis-4/12 relative">
+    <div className="basis-9/12 md:basis-7/12 lg:basis-4/12 h-full relative">
       <img
         className="h-screen w-full"
         src="https://e1.pxfuel.com/desktop-wallpaper/694/543/desktop-wallpaper-pokedex-template-by-hatirem-pokemon-pokedex-background.jpg"
