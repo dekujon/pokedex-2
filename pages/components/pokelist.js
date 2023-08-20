@@ -14,13 +14,13 @@ export default function Pokelist({ pokemonData, pokeOnClick }) {
           >
             {poke && poke.sprites && poke.sprites.front_default ? (
               <img
-                className="p-2 sm:p-0 sm:w-3/12 md:w-9/12 lg:w-6/12"
+                className="w-1/2 sm:p-0 sm:w-3/12 md:w-9/12 lg:w-6/12"
                 src={poke.sprites.front_default}
                 alt={poke.name}
               />
             ) : (
               <img
-                className="p-6 sm:p-2 sm:w-3/12 md:w-9/12 lg:w-6/12"
+                className="p-2 w-1/2 sm:p-2 sm:w-3/12 md:w-9/12 lg:w-6/12"
                 src={fallBack}
                 alt="Fallback"
               />

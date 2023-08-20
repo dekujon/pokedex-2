@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: -webkit-fill-available;
+}
+
+.mobile-h-fit {
+  height: -webkit-fill-available;
+}
+
 .normal {
   background-color: #a8a77a;
 }
@@ -167,8 +175,4 @@
 
 .fairyx {
   background-color: #ffacac;
-}
-
-.mobile-fit {
-  height: 100svh;
 }
