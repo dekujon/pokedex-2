@@ -75,11 +75,27 @@
 }
 
 .h-10p {
-    height: 10%;
+  height: 10%;
 }
 
 .h-90p {
-    height: 90%;
+  height: 90%;
+}
+
+.h-12p {
+  height: 12%;
+}
+
+.h-88p {
+  height: 88%;
+}
+
+.w-95p {
+  width: 95%;
+}
+
+.w-90p {
+  width: 90%;
 }
 
 .w-12p {
@@ -89,6 +105,18 @@
   width: 18%;
 }
 
+.text-8p {
+  font-size: 8px;
+}
+
+.text-7p {
+  font-size: 7px;
+}
+
+.text-10p {
+  font-size: 10px;
+}
+
 .text-11p {
   font-size: 11px;
 }
@@ -96,6 +124,7 @@
 .basis-20p {
   flex-basis: 20%;
 }
+
 
 .normalx {
   background-color: #e4e4d7;
@@ -142,7 +171,7 @@
 }
 
 .bugx {
-  background-color:#b4e652;
+  background-color: #b4e652;
 }
 
 .rockx {
@@ -171,4 +200,124 @@
 
 .m-height {
   height: 100dvh;
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}
+
+.normaly {
+  background-color: #f2f3cc;
+}
+
+.firey {
+  background-color: #ffe5da;
+}
+
+.watery {
+  background-color: #e3f0ff;
+}
+
+.grassy {
+  background-color: #c3fcf1;
+}
+
+.electricy {
+  background-color: #f8f2cb;
+}
+
+.icey {
+  background-color: #d9f3ff;
+}
+
+.fightingy {
+  background-color: #ffe3e6;
+}
+
+.poisony {
+  background-color: #ffe7ff;
+}
+
+.groundy {
+  background-color: #ffefca;
+}
+
+.flyingy {
+  background-color: #f5ebff;
+}
+
+.psychicy {
+  background-color: #ffe4fa;
+}
+
+.bugy {
+  background-color: #ebf5cf;
+}
+
+.rocky {
+  background-color: #ffeccc;
+}
+
+.ghosty {
+  background-color: #fbeaff;
+}
+
+.dragony {
+  background-color: #f7ebff;
+}
+
+.darky {
+  background-color: #edeeff;
+}
+
+.steely {
+  background-color: #edeeff;
+}
+
+.fairyy {
+  background-color: #ffe4e3;
+}
+
+.left-round {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .xs\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .xs\:order-first {
+    order: -9999;
+  }
+}
+
+@media (max-width: 480px) {
+  .xs\:border-none {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0.375rem /* 6px */;
+    border-top-right-radius: 0.375rem /* 6px */;
+  }
+}
+
+@media (max-width: 480px) {
+  .xs\:w-full {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .xs\:w-1\/2 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .xs\:p-1 {
+    padding: 0.125rem /* 2px */;
+  }
 }
