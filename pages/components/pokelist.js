@@ -94,7 +94,7 @@ export default function Pokelist({ pokemonData, pokeOnClick, loading }) {
           type="text"
           placeholder="Search.."
           className="input input-bordered input-error w-full md:w-7/12 lg:w-4/12 h-auto bg-red-700 text-11p text-center md:text-base md:p-1"
-          onChange={(e) => setQuery(e.target.value)}
+          onInput={(e) => setQuery(e.target.value)}
         />
       </div>
     </>
