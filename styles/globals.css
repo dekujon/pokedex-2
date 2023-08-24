@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 .normal {
   background-color: #a8a77a;
@@ -74,58 +80,6 @@
   background-color: #d685ad;
 }
 
-.h-10p {
-  height: 10%;
-}
-
-.h-90p {
-  height: 90%;
-}
-
-.h-12p {
-  height: 12%;
-}
-
-.h-88p {
-  height: 88%;
-}
-
-.w-95p {
-  width: 95%;
-}
-
-.w-90p {
-  width: 90%;
-}
-
-.w-12p {
-  width: 12%;
-}
-.w-18p {
-  width: 18%;
-}
-
-.text-8p {
-  font-size: 8px;
-}
-
-.text-7p {
-  font-size: 7px;
-}
-
-.text-10p {
-  font-size: 10px;
-}
-
-.text-11p {
-  font-size: 11px;
-}
-
-.basis-20p {
-  flex-basis: 20%;
-}
-
-
 .normalx {
   background-color: #e4e4d7;
 }
@@ -198,14 +152,6 @@
   background-color: #ffacac;
 }
 
-.m-height {
-  height: 100dvh;
-}
-
-div::-webkit-scrollbar {
-  display: none;
-}
-
 .normaly {
   background-color: #f2f3cc;
 }
@@ -276,6 +222,65 @@ div::-webkit-scrollbar {
 
 .fairyy {
   background-color: #ffe4e3;
+}
+
+.h-10p {
+  height: 10%;
+}
+
+.h-90p {
+  height: 90%;
+}
+
+.h-12p {
+  height: 12%;
+}
+
+.h-88p {
+  height: 88%;
+}
+
+.w-95p {
+  width: 95%;
+}
+
+.w-90p {
+  width: 90%;
+}
+
+.w-12p {
+  width: 12%;
+}
+.w-18p {
+  width: 18%;
+}
+
+.text-8p {
+  font-size: 8px;
+}
+
+.text-7p {
+  font-size: 7px;
+}
+
+.text-10p {
+  font-size: 10px;
+}
+
+.text-11p {
+  font-size: 11px;
+}
+
+.basis-20p {
+  flex-basis: 20%;
+}
+
+.m-height {
+  height: 100dvh;
+}
+
+div::-webkit-scrollbar {
+  display: none;
 }
 
 .left-round {

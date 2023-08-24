@@ -10,7 +10,6 @@ export default function Home() {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [isClicked, setIsClicked] = useState(false);
   const [pokemon, setPokemon] = useState([]);
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -18,9 +17,12 @@ export default function Home() {
     let cancel;
     const fetchData = async () => {
       try {
-        const res = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=649&offset=0", {
-          cancelToken: new axios.CancelToken((c) => (cancel = c)),
-        });
+        const res = await axios.get(
+          "https://pokeapi.co/api/v2/pokemon?limit=649&offset=0",
+          {
+            cancelToken: new axios.CancelToken((c) => (cancel = c)),
+          }
+        );
         const pokeList = res.data.results;
 
         const pokeData = await Promise.all(
@@ -33,6 +35,7 @@ export default function Home() {
 
         setPokemon(pokeData);
         setLoading(false);
+        
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -57,8 +60,7 @@ export default function Home() {
             pokeOnClick={handlePokemonClick}
           />
         </div>
-
-        <Dex selectedPokemon={selectedPokemon} isClicked={isClicked} />
+        <Dex loading={loading} selectedPokemon={selectedPokemon} isClicked={isClicked} />
       </div>
     </main>
   );

@@ -9,22 +9,24 @@ export default function Pokelist({ pokemonData, pokeOnClick, loading }) {
       {loading ? (
         <div className="h-88p flex justify-center items-center bg-cyan-100">
           <img
-            className="animate__animated animate__flash h-12 sm:h-1/6 md:h-1/4 animate__infinite"
+            className="h-12 sm:h-1/6 md:h-1/4 animate__animated animate__flash animate__infinite"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/770px-Pok%C3%A9_Ball_icon.svg.png"
             alt="pokeball spinner"
           />
         </div>
       ) : (
-        <div className="h-88p p-0.5 md:p-2 lg:p-4 overflow-auto bg-cyan-100">
+        <div className="h-88p p-0.5 md:p-2 lg:p-4 bg-cyan-100 overflow-auto">
           <ul className="flex flex-col lg:flex-row gap-1 lg:gap-3 lg:flex-wrap justify-center">
             {pokemonData &&
               pokemonData
-                .filter((poke) => poke.name.toLowerCase().includes(query))
+                .filter((poke) =>
+                  poke.name.toLowerCase().includes(query.toLowerCase())
+                )
                 .map((poke) => (
                   <li
-                    className={`md:pl-2 lg:basis-5/12 lg:flex-grow ${
+                    className={`flex xs:flex-col flex-row md:pl-2 lg:basis-5/12 lg:flex-grow  rounded-md md:rounded-lg items-center justify-between box-border cursor-pointer shadow-md lg:shadow-xl lg:hover:scale-105 text-gray-600 ${
                       poke.types["0"].type.name + "x"
-                    }  rounded-md md:rounded-lg flex flex-row xs:flex-col items-center justify-between box-border cursor-pointer shadow-md lg:shadow-xl lg:hover:scale-105`}
+                    }`}
                     key={poke.name}
                     onClick={() => pokeOnClick(poke)}
                   >
@@ -33,7 +35,7 @@ export default function Pokelist({ pokemonData, pokeOnClick, loading }) {
                         <div className="text-sm md:text-base hidden md:block">
                           #{poke.id}
                         </div>
-                        <p className="capitalize font-medium text-center text-10p sm:text-sm md:text-base flex-grow xs:p-1">
+                        <p className="flex-grow xs:p-1 text-10p sm:text-sm md:text-base  capitalize font-medium text-center ">
                           {poke.name}
                         </p>
                       </div>
@@ -42,7 +44,7 @@ export default function Pokelist({ pokemonData, pokeOnClick, loading }) {
                           return (
                             <span
                               key={t.type.name}
-                              className="bg-transparent uppercase text-10p md:text-xs border border-gray-700 rounded-lg flex-grow text-center sm:p-0.5"
+                              className="bg-transparent uppercase text-10p md:text-xs border border-gray-600 rounded-lg flex-grow text-center sm:p-0.5"
                             >
                               {t.type.name}
                             </span>
@@ -52,7 +54,7 @@ export default function Pokelist({ pokemonData, pokeOnClick, loading }) {
                     </div>
 
                     <div
-                      className={`left-round sm:h-full flex justify-center items-center xs:order-first xs:border-none xs:w-full ${
+                      className={`xs:order-first xs:border-none xs:w-full left-round sm:h-full flex justify-center items-center  ${
                         poke.types["0"].type.name + "y"
                       }`}
                     >
