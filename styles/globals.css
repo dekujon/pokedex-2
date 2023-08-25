@@ -326,3 +326,11 @@ div::-webkit-scrollbar {
     padding: 0.125rem /* 2px */;
   }
 }
+
+@media (min-width: 1024px) {
+  .lg\:hover\:scale-1025:hover {
+      --tw-scale-x: 1.025;
+      --tw-scale-y: 1.025;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}

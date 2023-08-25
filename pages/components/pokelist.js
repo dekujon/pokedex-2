@@ -24,7 +24,7 @@ export default function Pokelist({ pokemonData, pokeOnClick, loading }) {
                 )
                 .map((poke) => (
                   <li
-                    className={`flex xs:flex-col flex-row md:pl-2 lg:basis-5/12 lg:flex-grow  rounded-md md:rounded-lg items-center justify-between box-border cursor-pointer shadow-md lg:shadow-xl lg:hover:scale-105 text-gray-600 ${
+                    className={`flex xs:flex-col flex-row md:pl-2 lg:basis-5/12 lg:flex-grow  rounded-md md:rounded-lg items-center justify-between box-border cursor-pointer shadow-md lg:shadow-xl active:brightness-110 lg:hover:scale-1025 text-gray-600 ${
                       poke.types["0"].type.name + "x"
                     }`}
                     key={poke.name}
