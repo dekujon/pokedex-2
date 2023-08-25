@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  font-family: 'Open Sans', sans-serif;
+html,
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 .normal {
@@ -279,8 +280,26 @@ html, body {
   height: 100dvh;
 }
 
-div::-webkit-scrollbar {
-  display: none;
+@media (min-width: 1024px) {
+  /* width */
+  div::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  div::-webkit-scrollbar-track {
+    background: #b5e9ff;
+  }
+
+  /* Handle */
+  div::-webkit-scrollbar-thumb {
+    background: #82daff;
+  }
+
+  /* Handle on hover */
+  div::-webkit-scrollbar-thumb:hover {
+    background: #32c1ff;
+  }
 }
 
 .left-round {
@@ -329,8 +348,10 @@ div::-webkit-scrollbar {
 
 @media (min-width: 1024px) {
   .lg\:hover\:scale-1025:hover {
-      --tw-scale-x: 1.025;
-      --tw-scale-y: 1.025;
-      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-scale-x: 1.025;
+    --tw-scale-y: 1.025;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
