@@ -1,6 +1,6 @@
 function Dex({ selectedPokemon, isClicked, loading }) {
   return (
-    <div className="basis-9/12 md:basis-7/12 lg:basis-5/12 m-height relative">
+    <div className="basis-9/12 md:basis-7/12 lg:basis-5/12 m-height relative bg-cyan-100">
       <img
         className="h-full w-full"
         src="https://e1.pxfuel.com/desktop-wallpaper/694/543/desktop-wallpaper-pokedex-template-by-hatirem-pokemon-pokedex-background.jpg"
